@@ -25,5 +25,11 @@
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html"
+    },
+     "applications": {
+        "gecko": {
+            "id": "simpleytadblocker@kavo75.github",
+            "update_url": "https://github.com/kavo75/simpleytadblocker/updates.json"
+        }
     }
 }
