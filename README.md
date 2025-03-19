@@ -18,3 +18,5 @@ What it does NOT do:
 - Does not collect any data.
 
 No configuration needed – just install and enjoy ad-free YouTube!
+
+03/19/2025: Configured Extensive logging

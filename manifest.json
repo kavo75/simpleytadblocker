@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Simple YT Ad Blocker",
-    "version": "1.0",
+    "version": "1.01",
     "description": "Automatically skips YouTube ads.",
     "icons": {
         "48": "icon.png"
