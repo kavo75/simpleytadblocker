@@ -12,7 +12,8 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === "complete" && tab.url.includes("youtube.com")) {
-        logMessage(`Tab updated: ${tab.url}`);
+        logMessage(`YouTube tab updated: ${tab.url}`);
+        chrome.tabs.sendMessage(tabId, { type: "CHECK_ADS" });
     }
 });
 

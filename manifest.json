@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Simple YT Ad Blocker",
-    "version": "1.01",
+    "version": "1.0",
     "description": "Automatically skips YouTube ads.",
     "icons": {
         "48": "icon.png"
@@ -11,25 +11,11 @@
         "webNavigation",
         "*://www.youtube.com/*"
     ],
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": true
-    },
     "content_scripts": [
         {
             "matches": ["*://www.youtube.com/*"],
             "js": ["content.js"],
             "run_at": "document_start"
         }
-    ],
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
-    },
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "simpleytadblocker@kavo75.github",
-            "update_url": "https://github.com/kavo75/simpleytadblocker/updates.json"
-        }
-    }
+    ]
 }
