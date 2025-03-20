@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Simple YT Ad Blocker",
+    "version": "1.0",
+    "description": "Automatically skips YouTube ads.",
+    "icons": {
+        "48": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "*://www.youtube.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
