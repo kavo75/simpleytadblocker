@@ -5,21 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple YT Ad Blocker</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 10px; text-align: center; }
-        h2 { margin: 0; font-size: 16px; }
-        #status { font-weight: bold; color: green; }
-        button { margin-top: 10px; padding: 5px 10px; font-size: 14px; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            text-align: center;
+            max-width: 350px;
+            margin: auto;
+        }
+        h2 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        #status {
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 15px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h2>Simple YT Ad Blocker</h2>
     <p>Status: <span id="status">Running</span></p>
-    <button id="reload-btn">Reload</button>
+    <button id="reload-btn">Reload Extension</button>
 
-    <script>
-        document.getElementById("reload-btn").addEventListener("click", () => {
-            chrome.runtime.reload();
-        });
-    </script>
+    <div class="info">
+        <p><strong>Version:</strong> <span id="ext-version">1.0</span></p>
+        <p><strong>Release Date:</strong> <span id="release-date">March 2025</span></p>
+        <p><strong>Contact:</strong> <a href="mailto:uto@telenet.be?subject=Support Request for SimpleytadblockerV1.0">uto@telenet.be</a></p>
+        <p><strong>Website:</strong> <a href="https://agoes.duckdns.org" target="_blank">agoes.duckdns.org</a></p>
+    </div>
+
+    <div class="info">
+        <p><strong>Note:</strong> If ads are not skipped, try clicking the "Reload Extension" button.</p>
+        <p>If the issue persists, please contact <a href="mailto:uto@telenet.be?subject=Support Request for SimpleytadblockerV1.0">me</a>.</p>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
